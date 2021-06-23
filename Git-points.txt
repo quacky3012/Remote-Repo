@@ -1,0 +1,24 @@
+Git's three internal state management mechanism's, The Commit Tree (HEAD), The Staging Index, and The Working Directory.
+1)when a file is created for the first time in the working directory 'git status' show it as an untracked file.
+2)Once you stage the file in the staging area using 'git add', git nomore shows it as an untracked file.
+3)now when you commit using 'git commit -m "msg"' it commits the changes in your local repo.(A commit id aka commit hash is genereated 
+ along with the commit message, number of files that has changed and number of insertions/deletions that are made to the file)
+
+how to track changes made to thelocal repo?
+git log (shows commit ID(hash),author name, date and the file that was changed
+git log --oneline (restricts the log to one line for every commit, ie shows only the hash ID for the commit made)
+git log <branch_name> (provide branch name to wach logs from a different branch)
+git log --oneline <branch_name>
+
+git show <commit ID> (will show the details log for a particular commit)
+
+
+HEAD is the snapshot of your last commit
+
+git log --branches=*  (logs of all branches)
+git branch -a   (list all branches)
+
+get ls-files (list files that are tracked by git) 
+
+Points to search for on google:
+1)compare remote repos in (git diff)---git diff master_branch_path remote_branch_path
